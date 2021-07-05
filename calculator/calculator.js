@@ -1,25 +1,36 @@
-const add = function() {
-	
+const add = function(a, b) {
+	return a + b;
 };
 
-const subtract = function() {
-	
+const subtract = function(a,b) {
+	return a - b;
 };
 
-const sum = function() {
-	
+const sum = function(a) {
+	if(a.length===0)return 0;
+	if(a.length===1) return a[0];
+	let s = 0;
+	a.forEach(n=>{s+=n});
+	return s;
 };
 
-const multiply = function() {
-
+const multiply = function(a) {
+	let o = 1;
+	a.forEach(n=>{o*=n});
+	return o;
 };
 
-const power = function() {
-	
+const power = function(base,pow) {
+	let result = 1;
+	for(let i = 0; i< pow; i++) {
+		result *= base;
+	}
+	return result;
 };
 
-const factorial = function() {
-	
+const factorial = function(n) {
+	if(n<=1) return 1;
+	return factorial(n-1)*n;
 };
 
 module.exports = {
