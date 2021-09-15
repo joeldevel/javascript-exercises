@@ -10,13 +10,13 @@ const sum = function(a) {
 	if(a.length===0)return 0;
 	if(a.length===1) return a[0];
 	let s = 0;
-	a.forEach(n=>{s+=n});
+	a.forEach(e=>{s+=e});
 	return s;
 };
 
 const multiply = function(a) {
 	let o = 1;
-	a.forEach(n=>{o*=n});
+	a.forEach(e=>{o*=e});
 	return o;
 };
 
